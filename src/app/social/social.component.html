@@ -1,0 +1,40 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Second Address</th>
+        <th scope="col">City</th>
+        <th scope="col">ZipCode</th>
+        <th scope="col">Phone</th>
+        <th scope="col">E-mail</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="fetchSocial">
+      <tr *ngFor="let alumni of fetchSocial">
+        <th scope="row">{{ alumni.socialId }}</th>
+        <td>{{ alumni.firstName }}</td>
+        <td>{{ alumni.lastName }}</td>
+        <td>{{ alumni.address }}</td>
+        <td>{{ alumni.address1 }}</td>
+        <td>{{ alumni.city }}</td>
+        <td>{{ alumni.zipCode }}</td>
+        <td>{{ alumni.phone }}</td>
+        <td>{{ alumni.email }}</td>
+      </tr>
+      <!-- <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr> -->
+    </tbody>
+  </table>
